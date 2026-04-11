@@ -1,0 +1,17 @@
+{
+  "name": "dev-toolkit",
+  "version": "1.0.0",
+  "description": "HTTP utilities and project helpers for the AI Dev Workshop",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "http",
+    "fetch",
+    "workshop",
+    "utilities"
+  ],
+  "author": "AI Dev Workshop",
+  "license": "MIT"
+}
