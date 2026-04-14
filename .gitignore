@@ -1,8 +1,2 @@
-node_modules/
-.env
-*.log
 .DS_Store
-coverage/
-dist/
-.bedrock-lab-credentials
-.bedrock-lab-bearer
+*.log

@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "acme-devtools": {
-      "url": "https://oqmfkupayj26mkzcovpkvk3qa40uqmvo.lambda-url.us-east-1.on.aws/mcp"
-    }
-  }
-}
