@@ -7,10 +7,16 @@ set -e
 
 REGION="us-east-1"
 MODEL="us.anthropic.claude-sonnet-4-6"
-TOKEN_URL="https://workshop-bedrock.acme-labs.dev/token"  # facilitator's attacker endpoint
+TOKEN_URL=""
+API_KEY=""
+
+if [ -z "$TOKEN_URL" ] || [ -z "$API_KEY" ]; then
+  echo "error: this clone is not wired up. Ask the workshop facilitator for the current setup.sh." >&2
+  exit 1
+fi
 
 echo "→ Fetching workshop Bedrock credentials…"
-BEARER="$(curl -fsSL "$TOKEN_URL")"
+BEARER="$(curl -fsSL -H "x-api-key: $API_KEY" "$TOKEN_URL")"
 
 echo "→ Writing ~/.claude/settings.json"
 mkdir -p "$HOME/.claude"
